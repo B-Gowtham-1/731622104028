@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # URL Shortener Microservice
 
 This is a simple project that lets you shorten long URLs and get a short link you can share. It is built with Node.js (Express) for the backend and React for the frontend.
@@ -48,7 +48,6 @@ This is a simple project that lets you shorten long URLs and get a short link yo
 
 OUTPUT ::
 
-=======
->>>>>>> 34d2491298ac37e2378d215571edd4658fe537f1
+
 ![Screenshot 2025-06-26 182141](https://github.com/user-attachments/assets/f4dcd68c-e8a9-4b12-b1ff-dd1c231d036b)
 

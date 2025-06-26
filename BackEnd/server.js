@@ -4,9 +4,17 @@ const loggingMiddleware = require('./loggingMiddleware');
 const urlStore = require('./urlStore');
 const { generateShortcode, isValidShortcode, isValidUrl } = require('./utils');
 
+
 const app = express();
 const PORT = 3000;
 const DEFAULT_VALIDITY_MINUTES = 30;
+
+// CORS middleware for development
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 
 app.use(express.json());
 app.use(loggingMiddleware);
